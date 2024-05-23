@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Chat Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar" class="sidebar">
+            <div class="sidebar-buttons">
+                <button id="close-sidebar" class="icon-button">✖</button>
+                <button id="new-chat" class="icon-button">💬</button>
+            </div>
+        </div>
+
+
+        <div class="main-content">
+            <button id="open-sidebar" class="icon-button open-sidebar">✖</button>
+            <div class="chat-window">
+                <!-- Chat messages will go here -->
+            </div>
+
+
+            <div class="input-area-wrapper">
+                <div class="input-area">
+                    <input type="text" id="chat-input" placeholder="Type a message...">
+                    <button id="send-button" class="icon-button">➤</button>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
